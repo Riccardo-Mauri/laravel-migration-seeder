@@ -14,9 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $firstName = 'Gino';
-    $lastName = 'Paoli';
-
+  
     /*
         compact: crea un array associativo le cui chiavi sono le stringhe
                  che mettiamo tra le parentesi, mentre i valori di tali
@@ -40,8 +38,7 @@ Route::get('/', function () {
     // dd(compact('firstName', 'lastName'));
 
     return view('welcome', [
-        'firstName' => $firstName,
-        'lastName' => $lastName,
+      
     ]);
     // return view('welcome', compact('firstName', 'lastName'));
 });
